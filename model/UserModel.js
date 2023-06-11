@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 const userModel = require('../model/UserModel');
 
 var mysql      = require('mysql2');
@@ -47,7 +46,3 @@ module.exports = {
     connection,
     updateSubscription
 }
-
-const UserModel = mongoose.model('User', userSchema);
-
-module.exports = UserModel;
